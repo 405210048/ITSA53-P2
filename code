@@ -1,0 +1,24 @@
+#include<iostream>
+#include<string.h>
+
+using namespace std;
+int main(void)
+{
+    int T,a,b,flag,more;
+    float temp;
+    cin>>T;
+    while(T--)
+    {
+        flag=0;
+        cin>>a>>b;
+        while(flag!=1)
+        {
+            a=a/4;
+            if(b>a)
+                flag=1;
+            else
+                a=a+b;
+        }
+        cout<<a<<endl;
+    }
+}
